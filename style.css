@@ -422,3 +422,19 @@ span {
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding-right: 0; /* Adjust as needed */
+  }
+
+  .nav-link {
+    padding: 10px; /* Adjust as needed */
+  }
+
+  .nav-link span {
+    margin-left: 12px; /* Adjust as needed */
+    font-size: 1.2rem; /* Adjust as needed */
+  }
+}
+
