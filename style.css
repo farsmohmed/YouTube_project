@@ -241,24 +241,184 @@ main {
 
 
 
-@media (max-width:641px){
-  body{
-      font-size: 12px;
-      
-  }
+/* Add these styles at the end of your existing style.css file */
 
-  .video {
-      width: min-content;
-  
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width:300px){
-  body{
-      font-size: 10px;
-   
+header {
+  background-color: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  margin-right: 1rem;
+}
+
+.mid-section {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  width: 200px; /* Adjust the width as needed */
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.mic {
+  font-size: 24px;
+  margin-left: 0.5rem;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-section a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #606060;
+}
+
+.content-area {
+  display: flex;
+}
+
+.aside {
+  width: 240px;
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #606060;
+  margin-bottom: 0.5rem;
+}
+
+.channel-img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video {
+  width: calc(33.333% - 1rem);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.video .thumbnail {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+
+.video .thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-details {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.creator-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 0.5rem;
+}
+
+.creator-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.title {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.video-title,
+.video-creator {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+span {
+  color: #606060;
+  font-size: 0.8rem;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .videos-container {
+    flex-direction: column;
   }
+
   .video {
-    width: min-content;
+    width: 100%;
+    margin-right: 0;
   }
 }
