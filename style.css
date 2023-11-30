@@ -411,6 +411,7 @@ span {
   font-size: 0.8rem;
 }
 
+
 /* Add a media query for smaller screens */
 @media screen and (max-width: 768px) {
   .videos-container {
@@ -421,20 +422,46 @@ span {
     width: 100%;
     margin-right: 0;
   }
+
+
 }
 
 @media screen and (max-width: 768px) {
   nav {
-    padding-right: 0; /* Adjust as needed */
+    flex-direction: column;
   }
 
   .nav-link {
-    padding: 10px; /* Adjust as needed */
+    width: 100%;
+    margin-right: 0;
   }
 
-  .nav-link span {
-    margin-left: 12px; /* Adjust as needed */
-    font-size: 1.2rem; /* Adjust as needed */
-  }
+
 }
+
+@media screen and (max-width: 768px) {
+  .mid-section, .left-section, .right-section{
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  
+
+  }
+  .mid-section form {
+    width: 250px;
+    margin-right: 0;
+    margin-right: 0;
+
+  }
+
+
+  .video {
+    width: 100%;
+    margin-right: 0;
+  }
+
+
+}
+
 
