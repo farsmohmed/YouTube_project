@@ -454,6 +454,11 @@ span {
     margin-right: 0;
 
   }
+  
+.left-section img {
+  width: 46%;
+  padding: 16px;
+}
 
 
 }
