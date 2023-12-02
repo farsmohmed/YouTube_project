@@ -38,13 +38,7 @@ header {
   align-items: center;
   margin-left: -9%;
 }
-
-.mid-section form {
-  display: flex;
-  height: 40px;
-  width: 628px;
-}
-
+ 
 .mid-section input {
   width: 100%;
   border-radius: 2px 0 0 2px;
@@ -240,7 +234,6 @@ main {
 }
 
 
-
 /* Add these styles at the end of your existing style.css file */
 
 body {
@@ -257,7 +250,6 @@ header {
   align-items: center;
   padding: 0.5rem 1rem;
 }
-
 .left-section {
   display: flex;
   align-items: center;
@@ -269,7 +261,6 @@ header {
 }
 
 .mid-section {
-  flex-grow: 1;
   display: flex;
   align-items: center;
 }
@@ -283,7 +274,7 @@ input {
   border: 1px solid #ccc;
   border-radius: 3px;
   margin-right: 0.5rem;
-  width: 200px; /* Adjust the width as needed */
+  width: 200px;/* Adjust the width as needed */
 }
 
 button {
@@ -411,7 +402,6 @@ span {
   font-size: 0.8rem;
 }
 
-
 /* Add a media query for smaller screens */
 @media screen and (max-width: 768px) {
   .videos-container {
@@ -439,29 +429,38 @@ span {
 
 }
 
+
+
 @media screen and (max-width: 768px) {
-  .mid-section, .left-section, .right-section{
+  .mid-section, .right-section, .left-section {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  
-
-  }
-  .mid-section form {
-    width: 100%;
-    margin-right: 0;
-    margin-right: 0;
-
   }
   
-.left-section img {
-  width: 100%;
-  padding: 8px;
-
 }
 
 
+
+@media screen and (max-width: 768px) {
+  header {
+    display:flex;
+    justify-content: stretch;
+  }
+  .left-section img {
+    width: 75%;
+    padding-inline-start: 0%;
+  }
+  
+  .right-section a  {
+    width: 9px;
+    padding: 1px;
+
+}
+  
 }
 
+  
 
