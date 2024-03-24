@@ -162,9 +162,10 @@ body.dark-mode #nightModeImageShorts2 {
 
 /* Hover effect */
 .additional-items a:hover {
-  filter: brightness(0.50);
+
   border-radius: 8px;
-  background-color: #f8f2f2f2;
+  filter: brightness(0.-6);
+  background-color: #e7e2e2;
   color: #000;
 }
 
@@ -189,14 +190,14 @@ body.dark-mode #nightModeImageShorts2 {
 
 .arrow-icon-left {
   left: 10px;
-  top: 65px;
+  top: 70px;
 
 
 }
 
 .arrow-icon-right {
   right: 10px;
-  top: 65px;
+  top: 70px;
 }
 
 .arrow-icon :hover {
