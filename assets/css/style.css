@@ -1,0 +1,1036 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* Add these styles at the end of your existing style.css file */
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  position: fixed;
+  z-index: 2;
+  background-color: #f8f9fa;
+
+}
+
+
+
+.additional-items-container {
+  padding: 7px;
+  margin: 0;
+  white-space: nowrap;
+  /* Prevent line breaks */
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  position: fixed;
+  top: 56px;
+  width: 100%;
+  align-items: center;
+  background-color: #fff;
+
+}
+
+
+/* Add dark mode styles */
+body.dark-mode .additional-items-container {
+  background-color: #0f0f0f;
+  color: #fff;
+  /* Set font color to match background */
+}
+
+/* Add dark mode styles */
+body.dark-mode .menu-item span {
+  color: #fff;
+  /* Set font color to match background */
+}
+
+body.dark-mode .arrow-icon {
+  color: #000;
+}
+
+
+
+#dayModeImagex {
+  display: block;
+  /* Show day mode image by default */
+}
+
+#nightModeImagez {
+  display: none;
+  /* Hide night mode image by default */
+}
+
+body.dark-mode #dayModeImagex {
+  display: none;
+  /* Hide day mode image in dark mode */
+}
+
+body.dark-mode #nightModeImagez {
+  display: block;
+  /* Show night mode image in dark mode */
+}
+
+
+
+#dayModeImage {
+  display: block;
+  /* Show day mode image by default */
+}
+
+#nightModeImage {
+  display: none;
+  /* Hide night mode image by default */
+}
+
+body.dark-mode #dayModeImage {
+  display: none;
+  /* Hide day mode image in dark mode */
+}
+
+body.dark-mode #nightModeImage {
+  display: block;
+  /* Show night mode image in dark mode */
+}
+
+
+#dayModeImageShorts1 {
+  display: block;
+  /* Show day mode image by default */
+}
+
+#nightModeImageShorts2 {
+  display: none;
+  /* Hide night mode image by default */
+}
+
+body.dark-mode #dayModeImageShorts1 {
+  display: none;
+  /* Hide day mode image in dark mode */
+}
+
+body.dark-mode #nightModeImageShorts2 {
+  display: block;
+  /* Show night mode image in dark mode */
+}
+
+
+
+
+
+.additional-items {
+  display: inline-block;
+  /* Display items in a row */
+  margin-right: 10px;
+  /* Add some space between items */
+  border-radius: 5px;
+  background-color: #545d6641;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+.additional-items a {
+  text-decoration: none;
+  padding: 5px 5px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+
+
+
+}
+
+/* Hover effect */
+.additional-items a:hover {
+  filter: brightness(0.50);
+  border-radius: 8px;
+  background-color: #f8f2f2f2;
+  color: #000;
+}
+
+
+
+/* Adjust arrow icons */
+.arrow-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #000;
+  /* Adjust color to match YouTube design */
+  cursor: pointer;
+  filter: brightness(4.-20);
+  background-color: #dcdbdbe9;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.arrow-icon-left {
+  left: 10px;
+  top: 73px;
+
+
+}
+
+.arrow-icon-right {
+  right: 10px;
+  top: 73px;
+}
+
+.arrow-icon :hover {
+  filter: brightness(0.6);
+  color: #ccc;
+  border-radius: 50%;
+
+}
+
+.arrow-icon-rightstory {
+  right: 100px;
+  top: 1000px;
+
+}
+
+.arrow-icon-leftstory {
+  left: 200px;
+  top: 1000px;
+
+}
+
+
+
+
+/* Hide the scrollbar */
+.additional-items-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.section {
+  cursor: pointer;
+  transform: translate(-18%, 15%);
+  position: fixed;
+
+
+
+}
+
+.section hr {
+  height: 1px;
+  border: none;
+  margin: 10px;
+}
+
+.aside {
+  padding: 1rem;
+
+}
+
+
+/* the sidebar navigation */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  /* Start position outside the viewport */
+  transition: left 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Optional: Add shadow */
+  width: 20%;
+  height: 100%;
+  background-color: #fff;
+  overflow: auto;
+  z-index: 10;
+
+
+}
+
+#sidebar.open {
+  left: 0;
+  /* Slide in from the left */
+
+}
+
+/* Add dark mode styles */
+body.dark-mode #sidebar {
+  background-color: #0f0f0f;
+  color: #fff;
+  /* Set font color to match background */
+}
+
+
+.user-menu {
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+  overflow-y: auto;
+  display: none;
+  /* Initially hide the user menu */
+  position: absolute;
+  top: 50px;
+  /* Adjust as needed */
+  right: 50px;
+  /* Adjust as needed */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 20;
+}
+
+.user-menu :hover {
+  filter: brightness(0.-6);
+  background-color: #e7e2e2;
+  color: #000;
+  border-radius: 8px;
+
+}
+
+/* Add dark mode styles */
+body.dark-mode .user-menu {
+  background-color: #0f0f0f;
+  color: #fff;
+  /* Set font color to match background */
+}
+
+body.dark-mode .user-menu :hover {
+  color: #000;
+}
+
+
+.user-menu a {
+  display: block;
+  padding: 5px;
+  direction: rtl;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.user-menu.show {
+  display: block;
+  /* Show the user menu when .show class is added */
+}
+
+
+
+.content-area {
+  margin-left: 13%;
+  /* Adjust margin to accommodate aside */
+  margin-top: 75px;
+  padding: 1rem;
+  /* Optional: Add padding as needed */
+  transition: left 0.3s ease;
+
+
+}
+
+
+
+
+hr {
+  height: 1px;
+  border: .5px solid;
+  margin: 10px;
+}
+
+nav p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  width: 200px;
+  /* Adjust the width as needed */
+}
+
+button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* Hover effect */
+.user-menu a:hover {
+  filter: brightness(0.-6);
+  background-color: #e7e2e2;
+  color: #000;
+}
+
+/* Add dark mode styles */
+body.dark-mode {
+  background-color: #0f0f0f;
+  color: #fff;
+  /* Set font color to match background */
+}
+
+/* Update link color in dark mode */
+body.dark-mode a {
+  color: #bbb;
+  /* Change link color to a lighter shade */
+}
+
+/* Add dark mode styles */
+body.dark-mode header {
+  background-color: #0f0f0f;
+  color: #fff;
+  /* Set font color to match background */
+}
+
+
+.left-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.left-section-2 {
+  transform: translate(0%, -14%);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 24px;
+  margin-right: 1rem;
+}
+
+#logo-2 {
+  margin-left: 1rem;
+  font-size: 24px;
+}
+
+
+.left-section img {
+  width: 21%;
+  padding: 16px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+
+
+
+.left-section-2 img {
+  width: 70%;
+  padding: 16px;
+  padding-left: 25px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+
+.mid-section {
+  display: flex;
+  align-items: center;
+  margin-left: -50%;
+
+}
+
+.mid-section input {
+  width: 100%;
+  border-radius: 100px 0 0 100px;
+  padding: 10px;
+  font-size: 1.6rem;
+  border: 1px solid #d3d3d3;
+  border-right: none;
+}
+
+.mid-section button {
+  width: 80px;
+  border: 1px solid #d3d3d3;
+  border-radius: 0 100px 100px 0;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.mid-section button:hover {
+  filter: brightness(0.9);
+}
+
+.mid-section .mic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.mid-section .mic:hover {
+  filter: brightness(0.-6);
+  background-color: #e7e2e2;
+  color: #000;
+}
+
+.mic {
+  font-size: 24px;
+  margin-left: 0.5rem;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-section a {
+  margin-right: 1rem;
+  padding-right: 18px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.right-section a :hover {
+  filter: brightness(0.-6);
+  background-color: #c9c5c5;
+  color: #000;
+  border-radius: 50%;
+
+}
+
+
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 9px 15px;
+  text-decoration: none;
+  color: #121212;
+  margin-bottom: 0.5rem;
+
+}
+
+
+.nav-link:hover {
+  filter: brightness(0.-6);
+  background-color: #e7e2e2;
+  color: #000;
+}
+
+.nav-link span {
+  margin-left: 24px;
+  font-size: 1.4rem;
+  line-height: 2em;
+  font-weight: 400;
+
+}
+
+.active {
+  background-color: #96a2ad2e;
+}
+
+
+#active-span {
+  font-weight: 600;
+
+
+}
+
+.channel-img {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.video {
+  width: calc((100% - 32px) / 3);
+  /* Adjust as needed */
+  max-width: 360px;
+  /* Adjust as needed */
+  margin-bottom: 20px;
+  /* Adjust spacing between videos */
+  box-sizing: border-box;
+
+}
+
+.video .thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* Add rounded corners to thumbnails */
+}
+
+
+.video .thumbnail {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+.video .thumbnail :hover {
+  border-radius: 0;
+  background-color: #cccccc4e;
+}
+
+
+
+.video-details {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+/* Add this CSS at the end of your existing styles */
+
+.shorts-icon {
+  position: static;
+  top: 0;
+  /* Adjust the top position */
+  left: 0;
+  /* Adjust the left position */
+  z-index: 1;
+
+
+}
+
+.shorts-icon img {
+  width: 80px;
+  /* Adjust the width */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+.creator-img img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.video .video-details {
+  padding: 10px;
+}
+
+
+
+.video-title,
+.video-creator {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.title a {
+  text-decoration: none;
+  color: #000;
+}
+
+.video-title {
+  font-size: 1.6rem;
+  max-width: 278px;
+  font-weight: 500;
+  line-height: 2.2rem;
+  margin-bottom: 4px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.video-creator,
+.title span {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.video-creator:hover {
+  filter: brightness(0.9);
+}
+
+
+
+.content-area {
+  display: flex;
+}
+
+
+.channel-img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.main {
+  flex-grow: 2;
+  padding: 1rem;
+}
+
+
+
+
+.creator-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 0.5rem;
+}
+
+.creator-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+span {
+  font-size: 0.8rem;
+}
+
+/* Adjust gap, padding, and other styles for YouTube's layout preferences */
+
+.story-videos-container {
+  padding: 16px 0;
+  width: 100%;
+  /* Enable horizontal scrolling */
+  display: flex;
+  flex-wrap: nowrap;
+  /* Prevent story videos from wrapping */
+  margin-bottom: 20px;
+  height: 500px;
+
+
+
+
+  /* Adjust spacing between regular and story videos */
+}
+
+/* Hide the scrollbar */
+.story-videos::-webkit-scrollbar {
+  display: none;
+}
+
+.story-videos {
+  /* Increased gap to match YouTube */
+  padding: 0 16px;
+  /* Increased padding to match YouTube */
+  display: flex;
+  flex-wrap: nowrap;
+  /* Prevent story videos from wrapping */
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+  /* Adjust spacing between story videos */
+
+}
+
+.story-video {
+  flex: 0 0 auto;
+  /* Ensures story videos don't shrink */
+  width: 215px;
+  /* Adjust width of story videos */
+  height: 383px;
+  /* Adjust height of story videos */
+  flex-shrink: 0;
+  /* Prevent story videos from shrinking */
+
+}
+
+
+.story-video img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+
+}
+
+
+
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.menu-item i {
+  margin-right: 8px;
+}
+
+.menu-item span {
+  font-size: 14px;
+  color: #606060;
+}
+
+
+
+
+
+
+
+
+/* For medium screens */
+@media (max-width: 1023px) {
+
+  /* Header adjustments */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+
+
+  .video {
+    width: 100%;
+    /* Adjust as needed */
+    max-width: 600px;
+    /* Adjust as needed */
+    margin-bottom: 10px;
+
+
+  }
+
+
+
+  .left-section img {
+    width: 15%;
+    padding: 8px;
+    background-size: cover;
+  }
+
+
+  .left-section-2 img {
+    width: 70%;
+    padding: 8px;
+    padding-left: 13px;
+    background-size: cover;
+  }
+
+  /* the sidebar navigation */
+  #sidebar {
+    width: 30%;
+    height: 100%;
+
+
+  }
+
+  .right-section {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: -35px;
+
+  }
+
+  .mid-section {
+    margin: auto;
+    position: absolute;
+    left: -45px;
+  }
+
+ 
+
+}
+
+
+
+
+/* For small screens */
+@media (max-width: 767px) {
+
+  /* Header adjustments */
+  header {
+    flex-direction: row;
+  }
+
+  .videos-container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+  .video {
+    width: 100%;
+
+
+  }
+
+  .left-section,
+  .mid-section,
+  .right-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mid-section {
+    margin: auto;
+    position: relative;
+    
+  }
+
+  .right-section {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: -30px;
+
+  }
+
+  .search-input {
+    display: none;
+    width: calc(100% - 100px);
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
+  .search-button {
+    display: none;
+  }
+
+  .mid-section .mic {
+    display: none;
+  }
+
+  #searchButton {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    /* Change color as needed */
+    border-radius: 50%;
+    color: #131212;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: -130px;
+    transform: translateY(-50%);
+  }
+
+  .additional-items-container {
+    display: none;
+  }
+
+  .additional-items {
+    display: none;
+  }
+
+  .arrow-icon {
+    display: none;
+  }
+
+
+
+  .left-section img {
+    width: 100%;
+    padding: 8px;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  /* the sidebar navigation */
+  #sidebar {
+    width: 50%;
+    height: 100%;
+
+
+  }
+
+  .left-section-2 img {
+    width: 65%;
+    padding: 8px;
+    padding-left: 13px;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  /* Hide all items except personal account icon, menu icon, and search icon without input */
+  .mid-section input {
+    display: none;
+
+
+  }
+
+  .user-menu {
+    align-items: center;
+  }
+
+  #icon,
+  #iconx {
+    display: none;
+  }
+
+
+
+
+}
