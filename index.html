@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>YouTube</title>
+</head>
+
+<body>
+    <header>
+        <div class="left-section">
+            <i id="logo" class="material-icons logo">menu</i>
+            <img id="dayModeImage" src="assets/images/1200-80.jpg" alt="YouTube Logo">
+            <img id="nightModeImage" src="assets/images/new-youtube-logo.jpg" alt="Night Mode Image">
+        </div>
+
+        <div class="mid-section">
+            <!-- Inside the mid-section -->
+            <form action="#">
+                <input id="searchInput" class="search-input" type="text" placeholder="Search">
+                <button id="searchButton" class="search-button" type="button">
+                    <i class="material-icons">search</i></button>
+            </form>
+            <i title="mic" class="material-icons mic">mic</i>
+        </div>
+        <!-- Right section -->
+        <div class="right-section">
+            <!-- Notification icon with introductory message -->
+            <a href="#" title="Notifications"><i id="iconx" class="material-icons">notifications</i></a>
+            <!-- Video creation icon with introductory message -->
+            <a href="#" title="Create Video"><i id="icon" class="material-icons">video_call</i></a>
+            <!-- User account icon with introductory message -->
+            <a href="#" title="Account"><i class="material-icons" id="accountToggle">account_circle</i></a>
+        </div>
+        <!-- User menu -->
+        <div class="user-menu" id="userMenu">
+            <div class="menu-item">
+                <i class="material-icons">account_circle</i>
+                <span>User Name</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">@</i>
+                <span>@user-ol3ui9mi5c</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">person</i>
+                <span>View your channel</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">account_box</i>
+                <span>Google Account</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">swap_horiz</i>
+                <span>Switch Account</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">exit_to_app</i>
+                <span>Exit</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">videogame_asset</i>
+                <span>YouTube Studio</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">shopping_cart</i>
+                <span>Purchases and Memberships</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">storage</i>
+                <span>Your data in YouTube</span>
+            </div>
+            <div class="menu-item">
+                <i id="darkModeBtn" class="material-icons">brightness_3</i>
+                <i id="lightModeBtn" class="material-icons">brightness_high</i>
+                <span>Appearance: Dark</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">language</i>
+                <span>Language: English</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">lock</i>
+                <span>Restricted Mode: Off</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">location_on</i>
+                <span>Location: Egypt</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">keyboard</i>
+                <span>Keyboard Shortcuts</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">settings</i>
+                <span>Settings</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">help</i>
+                <span>Help</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">feedback</i>
+                <span>Send Feedback</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">apps</i>
+                <span>Apps</span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+        <!-- Additional items container -->
+        <div class="additional-items-container" id="additionalItemsContainer">
+            <!-- Additional items go here -->
+            <div class="additional-items">
+                <a href="#">YouTube Home</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">YouTube Home</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">YouTube Home</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">YouTube Home</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">Explore</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">Subscriptions</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">New for you</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">Watch</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">Recently uploaded</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">Courses</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">Adobe</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">CSS</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">Music</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">TV series</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">Movies</a>
+            </div>
+            <div class="additional-items">
+                <a href="#">All</a>
+            </div>
+
+
+
+            <!-- Add more additional items here -->
+        </div>
+        <!-- Left arrow icon -->
+        <div class="arrow-icon arrow-icon-left" id="arrowIconLeft">
+            <i class="material-icons">chevron_left</i>
+        </div>
+        <!-- Right arrow icon -->
+        <div class="arrow-icon arrow-icon-right" id="arrowIconRight">
+            <i class="material-icons">chevron_right</i>
+        </div>
+
+
+    </header>
+    <aside class="aside">
+        <nav id="sidebar">
+            <div class="left-section-2">
+                <i id="logo-2" class="material-icons logo-2">menu</i>
+                <img id="dayModeImagex" src="assets/images/1200-80.jpg" alt="YouTube Logo">
+                <img id="nightModeImagez" src="assets/images/new-youtube-logo.jpg" alt="Night Mode Image">
+            </div>
+            <a href="#" class="nav-link active">
+                <i class="material-icons">home</i>
+                <span id="active-span">Home</span>
+            </a>
+            <!-- Add other navigation links here -->
+            <a href="#" class="nav-link">
+                <i class="material-icons">explore</i>
+                <span>Explore</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="material-icons">subscriptions</i>
+                <span>Subscriptions</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="material-icons">ondemand_video</i>
+                <span>Originals</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="material-icons">play_circle_outline</i>
+                <span>Youtube music</span>
+            </a>
+            <hr>
+
+            <a href="#" class="nav-link">
+                <i class="material-icons">video_library</i>
+                <span>Library</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="material-icons">history</i>
+                <span>History</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="material-icons">smart_display</i>
+                <span>Your videos </span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="material-icons">watch_later</i>
+                <span>Watch later</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="material-icons">download</i>
+                <span>Downloads</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="material-icons">thumb_up</i>
+                <span>Liked videos</span>
+            </a>
+            <hr>
+
+            <p>Subscriptions</p>
+
+            <a href="#" class="nav-link">
+                <img title="img" class="channel-img" src="assets/images/i.jpg" />
+                <span>Channel name</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <img title="img" class="channel-img" src="assets/images/is.jpg" />
+                <span>Channel name</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <img title="img" class="channel-img" src="assets/images/is12.jpg" />
+                <span>Channel name</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <img title="img" class="channel-img" src="assets/images/ist.jpg" />
+                <span>Channel name</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <img title="img" class="channel-img" src="assets/images/ist2.jpg" />
+                <span>Channel name</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <img title="img" class="channel-img" src="assets/images/istoc.jpg" />
+                <span>Channel name</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <img title="img" class="channel-img" src="assets/images/istock.jpg" />
+                <span>Channel name</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <img title="img" class="channel-img" src="assets/images/istockph.jpg" />
+                <span>Channel name</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <img title="img" class="channel-img" src="assets/images/sameh.jpg" />
+                <span>Channel name</span>
+            </a>
+        </nav>
+        <div class="section">
+            <nav>
+                <a href="#" class="nav-link active">
+                    <i class="material-icons">home</i>
+                </a>
+                <!-- Add other navigation links here -->
+                <a href="#" class="nav-link">
+                    <i class="material-icons">explore</i>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="material-icons">subscriptions</i>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="material-icons">ondemand_video</i>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="material-icons">play_circle_outline</i>
+                </a>
+                <hr>
+
+
+                <a href="#" class="nav-link">
+                    <i class="material-icons">video_library</i>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="material-icons">history</i>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="material-icons">smart_display</i>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="material-icons">watch_later</i>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="material-icons">download</i>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="material-icons">thumb_up</i>
+                </a>
+                <hr>
+            </nav>
+        </div>
+    </aside>
+    <main>
+
+        <div class="content-area">
+            <div class="videos-container">
+                <!-- Video 1 -->
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/s4.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/s4.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2 (Duplicate) -->
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/s3.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/s3.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Video 3 (Duplicate) -->
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/s2.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/s2.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 4 (Duplicate) -->
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/s1.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/s1.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 5 (Duplicate) -->
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/istockphoto2.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/istockphoto2.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 6 (Duplicate) -->
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/istockphot2.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/istockphot2.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shorts Icon -->
+                <div class="shorts-icon">
+                    <img id="dayModeImageShorts1" src="assets/images/78.jpg" alt="Shorts Icon">
+                    <img id="nightModeImageShorts2" src="assets/images/1تنزيل.png" alt="Shorts Icon">
+
+                </div>
+
+                <div class="story-videos-container">
+                    <!-- Story videos -->
+                    <div class="story-videos" id="storyvideos">
+                        <div class="story-video">
+                            <img src="assets/images/s1.jpg" alt="Story 1">
+                            <div class="title">
+                                <a href="#" class="video-title">Video Title</a>
+                                <span>10M views * 3 Months</span>
+                            </div>
+                        </div>
+                        <div class="story-video">
+                            <img src="assets/images/s2.jpg" alt="Story 2">
+                            <div class="title">
+                                <a href="#" class="video-title">Video Title</a>
+                                <span>10M views * 3 Months</span>
+                            </div>
+                        </div>
+                        <div class="story-video">
+                            <img src="assets/images/s1.jpg" alt="Story 1">
+                            <div class="title">
+                                <a href="#" class="video-title">Video Title</a>
+                                <span>10M views * 3 Months</span>
+                            </div>
+                        </div>
+                        <div class="story-video">
+                            <img src="assets/images/s2.jpg" alt="Story 2">
+                            <div class="title">
+                                <a href="#" class="video-title">Video Title</a>
+                                <span>10M views * 3 Months</span>
+                            </div>
+                        </div>
+                        <div class="story-video">
+                            <img src="assets/images/s1.jpg" alt="Story 1">
+                            <div class="title">
+                                <a href="#" class="video-title">Video Title</a>
+                                <span>10M views * 3 Months</span>
+                            </div>
+                        </div>
+                        <div class="story-video">
+                            <img src="assets/images/s2.jpg" alt="Story 2">
+                            <div class="title">
+                                <a href="#" class="video-title">Video Title</a>
+                                <span>10M views * 3 Months</span>
+                            </div>
+                        </div>
+                        <div class="story-video">
+                            <img src="assets/images/s1.jpg" alt="Story 1">
+                            <div class="title">
+                                <a href="#" class="video-title">Video Title</a>
+                                <span>10M views * 3 Months</span>
+                            </div>
+                        </div>
+                        <div class="story-video">
+                            <img src="assets/images/s2.jpg" alt="Story 2">
+                            <div class="title">
+                                <a href="#" class="video-title">Video Title</a>
+                                <span>10M views * 3 Months</span>
+                            </div>
+                        </div>
+                        <div class="story-video">
+                            <img src="assets/images/s1.jpg" alt="Story 1">
+                            <div class="title">
+                                <a href="#" class="video-title">Video Title</a>
+                                <span>10M views * 3 Months</span>
+                            </div>
+                        </div>
+                        <div class="story-video">
+                            <img src="assets/images/s2.jpg" alt="Story 2">
+                            <div class="title">
+                                <a href="#" class="video-title">Video Title</a>
+                                <span>10M views * 3 Months</span>
+                            </div>
+                        </div>
+                        <!-- Add more story videos here -->
+                    </div>
+                    <!-- Left arrow icon -->
+                    <div class="arrow-icon arrow-icon-leftstory" id="arrowIconLeftstory">
+                        <i class="material-icons">chevron_left</i>
+                    </div>
+                    <!-- Right arrow icon -->
+                    <div class="arrow-icon arrow-icon-rightstory" id="arrowIconRightstory">
+                        <i class="material-icons">chevron_right</i>
+                    </div>
+
+
+                </div>
+
+
+                <!-- Video 7 (Duplicate) -->
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/istockph.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/istockph.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/istock2.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/istock2.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/istock.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/istock.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/istoc.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/istoc.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/ist2.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/ist2.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/s4.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/s4.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/sameh.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/sameh.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/ist.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/ist.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/is12.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/is12.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/is.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/is.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/i.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/i.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="assets/images/sameh.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <div class="creator-img">
+                            <img src="assets/images/sameh.jpg" alt="Creator Image">
+                        </div>
+                        <div class="title">
+                            <a href="#" class="video-title">Video Title</a>
+                            <a href="#" class="video-creator">Channel name</a>
+                            <span>10M views * 3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more duplicate video entries here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Include JavaScript file -->
+    <script src="assets/js/javescrpt.js"></script>
+</body>
+
+</html>
