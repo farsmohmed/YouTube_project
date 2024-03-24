@@ -437,6 +437,7 @@ body.dark-mode header {
 
 #logo-2 {
   margin-left: 1rem;
+  margin-top: 5px;
   font-size: 24px;
 }
 
@@ -455,6 +456,7 @@ body.dark-mode header {
   width: 70%;
   padding: 16px;
   padding-left: 25px;
+  margin-top: 5px;
   background-size: cover;
   object-fit: cover;
 }
@@ -513,6 +515,7 @@ body.dark-mode header {
 .right-section {
   display: flex;
   align-items: center;
+  margin-right: -20px;
 }
 
 .right-section a {
@@ -941,7 +944,7 @@ span {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    right: -30px;
+    right: -10px;
 
   }
 
@@ -973,7 +976,7 @@ span {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    right: -130px;
+    right: -100px;
     transform: translateY(-50%);
   }
 
