@@ -113,4 +113,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+const leftArrow = document.getElementById('leftArrow');
+const rightArrow = document.getElementById('rightArrow');
+const additionalItemsContainer = document.querySelector('.additional-items-container');
+
+leftArrow.addEventListener('click', () => {
+  additionalItemsContainer.scrollLeft -= 100; // Adjust scroll amount as needed
+  toggleArrowVisibility();
+});
+
+rightArrow.addEventListener('click', () => {
+  additionalItemsContainer.scrollLeft += 100; // Adjust scroll amount as needed
+  toggleArrowVisibility();
+});
+
+const toggleArrowVisibility = () => {
+  // If there are no more items to scroll to on the left, hide the left arrow
+  leftArrow.style.display = additionalItemsContainer.scrollLeft > 0 ? 'block' : 'none';
+
+  // If there are no more items to scroll to on the right, hide the right arrow
+  rightArrow.style.display = additionalItemsContainer.scrollLeft < additionalItemsContainer.scrollWidth - additionalItemsContainer.clientWidth ? 'block' : 'none';
+};
+
+
 
