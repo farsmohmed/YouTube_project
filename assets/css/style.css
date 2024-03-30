@@ -165,7 +165,6 @@ body.dark-mode #nightModeImageShorts2 {
 
 /* Hover effect */
 .additional-items a:hover {
-
   border-radius: 8px;
   filter: brightness(0.-6);
   background-color: #e7e2e2;
@@ -184,29 +183,30 @@ body.dark-mode #nightModeImageShorts2 {
   /* Adjust color to match YouTube design */
   cursor: pointer;
   filter: brightness(4.-20);
-  background-color: #dcdbdbe9;
+  background-color: #b5b5b7;
   border-radius: 50%;
   z-index: 1;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px rgba(137, 135, 135, 0.1);
 
 }
 
 .arrow-icon-left {
-  left: 10px;
-  top: 70px;
+  left: 5px;
+  top: 35px;
 
 
 }
 
 .arrow-icon-right {
-  right: 10px;
-  top: 70px;
+  right: 5px;
+  top: 35px;
 }
 
 .arrow-icon :hover {
-  filter: brightness(0.6);
-  color: #ccc;
   border-radius: 50%;
+  filter: brightness(0.-6);
+  background-color: #e7e2e2;
+  color: #000;
 
 }
 
@@ -235,8 +235,6 @@ body.dark-mode #nightModeImageShorts2 {
   cursor: pointer;
   transform: translate(-18%, 15%);
   position: fixed;
-
-
 
 }
 
@@ -1022,6 +1020,7 @@ span {
     color: #f8f9fa;
 
   }
+
 
 
 }
