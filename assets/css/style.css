@@ -178,15 +178,18 @@ body.dark-mode #nightModeImageShorts2 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 30px;
+  font-size: 25px;
   color: #000;
   /* Adjust color to match YouTube design */
   cursor: pointer;
   filter: brightness(4.-20);
-  background-color: #b5b5b7;
+  background-color: #d3d2d2;
   border-radius: 50%;
   z-index: 1;
-  box-shadow: 0 1px 10px rgba(137, 135, 135, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* Increase intensity and spread */
+  transition: box-shadow 0.3s ease;
+  /* Add transition effect */
 
 }
 
@@ -207,6 +210,7 @@ body.dark-mode #nightModeImageShorts2 {
   filter: brightness(0.-6);
   background-color: #e7e2e2;
   color: #000;
+  box-shadow: 0 8px 25px rgba(206, 204, 204, 0.752);
 
 }
 
@@ -603,6 +607,8 @@ body.dark-mode header {
   height: auto;
   border-radius: 8px;
   /* Add rounded corners to thumbnails */
+  cursor: pointer;
+  object-fit: cover;
 }
 
 
@@ -661,6 +667,7 @@ body.dark-mode header {
   border-radius: 50%;
   margin-right: 12px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .video .video-details {
