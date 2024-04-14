@@ -38,7 +38,7 @@ body.dark-mode .header {
 
 
 .additional-items-container {
-  padding: 7px;
+  padding: 0;
   margin: 0;
   white-space: nowrap;
   /* Prevent line breaks */
@@ -141,9 +141,11 @@ body.dark-mode #nightModeImageShorts2 {
   display: inline-block;
   /* Display items in a row */
   margin-right: 10px;
+  margin-bottom: 8px;
+  padding: 6px 6px;
   /* Add some space between items */
-  border-radius: 5px;
-  background-color: #545d6641;
+  border-radius: 8px;
+  background-color: #6060602c;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 
@@ -152,21 +154,29 @@ body.dark-mode #nightModeImageShorts2 {
 
 .additional-items a {
   text-decoration: none;
-  padding: 5px 5px;
-  color: #000;
+  color: #0f0f0f;
   font-size: 15px;
   font-weight: 500;
-
-
+  padding: 6px 6px;
+  border-radius: 8px;
+  vertical-align: inherit;
 
 }
 
 /* Hover effect */
 .additional-items a:hover {
-  border-radius: 8px;
   filter: brightness(0.-6);
-  background-color: #e7e2e2;
+  background-color: #d6d5d5;
   color: #000;
+  
+}
+
+/* Hover effect */
+.additional-items:hover {
+  filter: brightness(0.-6);
+  background-color: #d6d5d5;
+  color: #000;
+  
 }
 
 
@@ -177,7 +187,7 @@ body.dark-mode #nightModeImageShorts2 {
   top: 50%;
   transform: translateY(-50%);
   font-size: 25px;
-  color: #656464a5;
+  color: #000;
   /* Adjust color to match YouTube design */
   cursor: pointer;
   filter: brightness(4.-20);
@@ -204,11 +214,12 @@ body.dark-mode #nightModeImageShorts2 {
 }
 
 .arrow-icon :hover {
-  border-radius: 50%;
   filter: brightness(0.-6);
   background-color: #e7e2e2;
+  padding: 3px 3px;
+  border-radius: 50%;
   color: #000;
-  box-shadow: 0 8px 25px rgba(206, 204, 204, 0.752);
+  box-shadow: 0 8px 25px 10px rgba(206, 204, 204, 0.752);
 
 }
 
@@ -295,8 +306,8 @@ body.dark-mode #sidebar {
   /* Adjust as needed */
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  border-radius: 5px;
+  padding: 6px;
+  border-radius: 8px;
   z-index: 20;
 }
 
@@ -305,8 +316,10 @@ body.dark-mode #sidebar {
   background-color: #e7e2e2;
   color: #000;
   border-radius: 8px;
+  padding: 5px 5px;
 
 }
+
 
 /* Add dark mode styles */
 body.dark-mode .user-menu {
